@@ -96,6 +96,17 @@ const data = [
     thirdParagraph:
       "Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. ",
   },
+  {
+    title: "Bacon Ipsum",
+    date: "Jun 3rd 2020",
+    firstParagraph:
+      "Spicy jalapeno bacon ipsum dolor amet meatloaf bresaola meatball porchetta ham. Frankfurter salami corned beef t-bone flank, pancetta spare ribs bacon. Salami ground round turkey doner picanha porchetta, bresaola tenderloin short loin biltong. Pork chislic spare ribs pastrami, short loin buffalo cupim beef ribs brisket tail filet mignon turkey pork chop chuck. Pork belly biltong doner, picanha drumstick ham hock t-bone boudin spare ribs tri-tip chislic corned beef salami pastram",
+    secondParagraph:
+      "Porchetta capicola ground round burgdoggen, brisket ham hock tenderloin turducken boudin ribeye hamburger pork loin cow. Shankle spare ribs pork belly shoulder. T-bone rump ribeye salami ball tip tongue hamburger chislic pastrami drumstick biltong. Cupim ball tip tenderloin short loin.",
+    thirdParagraph:
+      "Flank pig ham hock, sirloin jowl tongue buffalo porchetta. Meatball prosciutto tongue tail, jerky picanha landjaeger jowl. Pork chop tri-tip hamburger ham swine, buffalo salami andouille t-bone picanha. T-bone pancetta sirloin tenderloin flank kevin alcatra brisket doner jerky pork loin turkey ribeye filet mignon.",
+  },
+
 ];
 
 /* Step 1: Write a component called 'articleMaker' to create an article. You want your component to return markup like the template below: 
