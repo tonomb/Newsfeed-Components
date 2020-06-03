@@ -141,6 +141,7 @@ function articleMaker(articles){
   const paragraphTwo = document.createElement('p');
   const paragraphThree = document.createElement('p');
   const expandButton = document.createElement('span');
+  const closeButton = document.createElement('span');
 
   article.appendChild(title);
   article.appendChild(date);
@@ -148,22 +149,31 @@ function articleMaker(articles){
   article.appendChild(paragraphTwo);
   article.appendChild(paragraphThree);
   article.appendChild(expandButton);
+  article.appendChild(closeButton);
 
   article.classList.add('article');
   date.classList.add('date');
   expandButton.classList.add('expandButton');
+  closeButton.classList.add('expandButton', 'hidden');
 
   title.textContent = articles.title;
   date.textContent = articles.date;
   paragraphOne.textContent= articles.firstParagraph;
   paragraphTwo.textContent = articles.secondParagraph;
   paragraphThree.textContent = articles.thirdParagraph;
-  expandButton.textContent = 'Show More'
+  expandButton.textContent = 'Show More';
+  closeButton.textContent ='Show Less';
 
   expandButton.addEventListener('click', function(){
-    console.log('clicked');
-    
-    article.classList.toggle('article-open');
+    article.classList.add('article-open');
+    expandButton.classList.add('hidden');
+    closeButton.classList.remove('hidden');
+  });
+
+  closeButton.addEventListener('click', function(){
+    article.classList.remove('article-open');
+    expandButton.classList.remove('hidden');
+    closeButton.classList.add('hidden');
   });
 
   return article;
